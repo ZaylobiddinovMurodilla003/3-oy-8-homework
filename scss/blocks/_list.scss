@@ -1,0 +1,59 @@
+.list {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 30px;
+
+  &__item {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    position: relative;
+    text-align: center;
+    background-color: $sacramento-state-green;
+    padding: 32px 24px 54px;
+    width: 350px;
+    margin-bottom: 46px;
+
+    &::after {
+      display: inline-block;
+      content: "";
+      width: 56px;
+      height: 56px;
+      background-image: url(../../images/plus-oval.svg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: absolute;
+      bottom: -30px;
+    }
+
+    &:nth-child(6)::after {
+      background-image: url(../../images/multiplication-oval.svg);
+    }
+
+    & &__title {
+      color: $rapture-blue;
+      text-align: center;
+      font-size: 18px;
+      line-height: 28px;
+    }
+
+    &__text {
+      color: $white;
+      text-align: center;
+      font-size: 15px;
+      font-style: italic;
+      font-weight: 500;
+      line-height: 25px;
+    }
+    & img {
+      order: -1;
+      margin-bottom: 16px;
+    }
+
+    &__6 {
+      order: -2;
+      width: 254px;
+      margin-bottom: 8px;
+    }
+  }
+}

@@ -1,0 +1,18 @@
+.meet {
+  padding: 140px 0 122px;
+  background-color: $deep-jungle-green;
+  background-image: url(../../images/meet-bgi-1.svg),
+    url(../../images/meet-bgi-2.svg);
+  background-repeat: no-repeat;
+  background-size: 100px 200px, 147px 100px;
+  background-position: calc(50% - 720px) top, calc(50% + 690px) bottom;
+
+  &__title {
+    width: 920px;
+    color: $white;
+    text-align: center;
+    font-size: 48px;
+    margin: 0 auto;
+    margin-bottom: 64px;
+  }
+}

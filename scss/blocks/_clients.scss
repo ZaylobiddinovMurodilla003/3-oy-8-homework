@@ -1,0 +1,21 @@
+.clients {
+  padding: 140px 0 151px;
+  background-color: $sacramento-state-green;
+  background-image: url(../../images/clients-bgi.svg);
+  background-repeat: no-repeat;
+  background-size: 200px 200px;
+  background-position: calc(50% - 660px) top;
+
+  &__title {
+    color: $white;
+    text-align: center;
+    font-size: 48px;
+    margin-bottom: 70px;
+  }
+
+  &__list {
+    display: flex;
+    gap: 80px;
+    justify-content: center;
+  }
+}
